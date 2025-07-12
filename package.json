@@ -1,0 +1,28 @@
+{
+  "name": "cypress-login-tests",
+  "version": "1.0.0",
+  "description": "Automated test suite for login functionality using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headless": "cypress run --headless",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:spec": "cypress run --spec"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "e2e",
+    "automation",
+    "login"
+  ],
+  "author": "Test Engineer",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}

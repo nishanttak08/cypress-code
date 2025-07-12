@@ -1,0 +1,33 @@
+{
+  "validCredentials": {
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!"
+  },
+  "invalidCredentials": [
+    {
+      "username": "invaliduser",
+      "password": "SuperSecretPassword!",
+      "scenario": "invalid username"
+    },
+    {
+      "username": "tomsmith",
+      "password": "wrongpassword",
+      "scenario": "invalid password"
+    },
+    {
+      "username": "",
+      "password": "SuperSecretPassword!",
+      "scenario": "empty username"
+    },
+    {
+      "username": "tomsmith",
+      "password": "",
+      "scenario": "empty password"
+    }
+  ],
+  "expectedMessages": {
+    "successMessage": "You logged into a secure area!",
+    "invalidCredentialsMessage": "Your username is invalid!",
+    "invalidPasswordMessage": "Your password is invalid!"
+  }
+}
